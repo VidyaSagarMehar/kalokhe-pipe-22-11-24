@@ -1,0 +1,1626 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --first-color: #014e9e;
+  --second-color: #2d91cf;
+  --white: #FFF;
+  --black: #000;
+}
+
+@font-face {
+  font-family: 'Inclusive Sans', sans-serif;
+  src: url("../font/InclusiveSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url("../font/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url("../font/Poppins-Bold.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sticky-top {
+  background-color: var(--white);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.topbar {
+  background: -webkit-gradient(linear, right top, left top, from(#2d91cf), to(#014e9e));
+  background: linear-gradient(right, #2d91cf, #014e9e);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3px 5px 3px 5px;
+}
+
+.topbar .social .bg-soc .fab {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.topbar .phone-call .btn-link {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.topbar .phone-call .btn-link:hover {
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navbar {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar .navbar-brand img {
+   width: 100px;
+}
+
+.navbar ul li a {
+  color: var(--black) !important;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  background-color: var(--first-color);
+  color: var(--white) !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar ul .dropdown-menu {
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar ul .dropdown-menu .dropdown-item {
+  line-height: 30px;
+}
+
+.navbar .make-india img {
+  width: 100px;
+  padding-right: 10px;
+}
+
+.navbar .swach-bharat img {
+  width: 100px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  border-bottom: 2px solid var(--first-color);
+}
+
+.navbar-light .navbar-nav .active > .dropdown-item {
+  border-bottom: 2px solid var(--first-color);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swipe-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(80px, 80px);
+          transform: translate(80px, 80px);
+  text-align: left;
+}
+
+.swipe-info h2 {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 30px;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.swipe-info h2 span {
+  background-color: var(--first-color);
+  padding: 5px 6px 5px 6px;
+  border-radius: 10px;
+}
+
+.swipe-info p {
+  font-size: 16px;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.swipe-info .swipe-btn .btn {
+  background-color: var(--first-color);
+  padding: 10px 15px 10px 15px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-section .about-area .about-info h2 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-section .about-area .about-info .ab-new {
+  font-weight: 600;
+  font-family: 'Inclusive Sans', sans-serif;
+  color: var(--first-color);
+  font-size: 30px;	
+}
+
+.about-section .about-area .about-info p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+}
+
+.about-section .about-area .about-info ul li {
+  font-size: 14px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+}
+
+.about-section .about-area .about-info ul li .fas {
+  color: var(--first-color);
+}
+
+.about-section .about-area .about-info .side-img img {
+  width: 230px;
+  position: absolute;
+  right: 0;
+}
+
+.about-section .about-img img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.about-section .about-img h2 {
+  font-family: 'Inclusive Sans', sans-serif;
+  background-color: var(--first-color);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+
+.about-section .about-btn .btn {
+  background-color: var(--first-color);
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.about-section .about-btn .new {
+  background-color: transparent;
+  color: var(--first-color);
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-section {
+  background-color: rgba(204, 204, 204, 0.4);
+}
+
+.product-section .pro-head {
+  text-align: center !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.product-section .product-area .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.product-section .product-area .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--second-color) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product-section .product-area .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-section .product-infos {
+  cursor: pointer;
+}
+
+.product-section .product-infos a {
+  text-decoration: none;
+}
+
+.product-section .product-infos h2 {
+  font-weight: 600;
+  font-family: 'Inclusive Sans', sans-serif !important;
+  color: var(--first-color);
+  font-size: 22px !important;
+  text-align: left;
+  padding: 0px 10px 0px 10px;
+}
+
+.product-section .product-infos p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  padding: 0px 10px 0px 10px;
+  color: var(--black);
+}
+
+.product-section .product-infos img {
+  padding: 10px;
+}
+
+.product-section .product-infos .product-btn {
+  text-align: left !important;
+  padding: 0px 10px 0px 10px;
+}
+
+.product-section .product-infos .product-btn .btn {
+  margin-bottom: 10px;
+  background-color: var(--first-color);
+  border-radius: 50px;
+  padding: 5px 20px 5px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.we-work-section .work-part h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.we-work-section .work-part .card {
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.we-work-section .work-part .card h5 {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.we-work-section .work-part .card h5 span {
+  background-color: var(--first-color);
+  color: var(--white);
+  padding: 5px 5px 5px 5px;
+}
+
+.we-work-section .work-part .card .card-body {
+  bottom: 0;
+  position: absolute;
+}
+
+.work-part .card {
+  overflow: hidden;
+}
+
+.work-part .card img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.work-part .card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-section .project-part h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-section .project-part .card {
+  cursor: pointer;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-section .project-part .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-section .project-part .card p {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-section .project-part .card p span {
+  color: var(--white);
+  background-color: var(--first-color);
+  padding: 2px 2px 2px 2px;
+}
+
+.project-section .project-part .card img {
+  padding: 10px;
+}
+
+.why-kalokhee-section {
+  background-color: rgba(204, 204, 204, 0.4);
+}
+
+.why-kalokhee-section .why-part h2 {
+  font-size: 24px;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 500;
+}
+
+.why-kalokhee-section .why-part ul li {
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.why-kalokhee-section .why-part .why-button .btn {
+  background-color: var(--first-color);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.why-kalokhee-section .why-part .why-img img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.why-kalokhee-section .why-part .side-2 img {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  bottom: 5px;
+}
+
+.client-slide h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.client-slide .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.client-slide .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-section {
+  background-color: rgba(1, 78, 158, 0.4);
+}
+
+.footer-section .logo-info img {
+  width: 100px;
+}
+
+.footer-section .logo-info p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-section .quik-link h2 {
+  font-weight: 500;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 24px;
+}
+
+.footer-section .quik-link a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-section .quik-link a:hover {
+  color: var(--white);
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-section .pages-link h2 {
+  font-weight: 500;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 24px;
+}
+
+.footer-section .pages-link a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-section .pages-link a:hover {
+  color: var(--white);
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-section .contact-info {
+  line-height: 30px;
+}
+
+.footer-section .contact-info h2 {
+  font-weight: 500;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 24px;
+}
+
+.footer-section .contact-info p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-section .contact-info a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.footer-section .contact-info .add-in h3,
+.footer-section .contact-info .email-in h3,
+.footer-section .contact-info .phone-in h3 {
+  font-size: 15px;
+  font-family: 'Inclusive Sans', sans-serif;
+}
+
+.copyright {
+  background-color: rgba(1, 78, 158, 0.4);
+}
+
+.copyright .copy {
+  padding: 5px;
+}
+
+.copyright .copy p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-center {
+  text-align: center;
+}
+
+.home-center h1 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Inclusive Sans', sans-serif;
+  color: var(--first-color);
+}
+
+.home-center p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+}
+
+/* about.html  */
+.breadcrums-page {
+  background: url("../images/breadcrums-page.png");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+
+.breadcrums-page .bread-page-info h1 {
+  text-align: center;
+  font-weight: 600;
+  color: var(--white);
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 24px;
+}
+
+.about-page-section .about-page-area .about-page-info p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.about-page-section .about-page-area .about-page-img img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.about-page-section .about-page-area .about-page-btn .abp-btn .btn {
+  background-color: var(--first-color);
+  padding: 10px 13px 10px 13px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.vision-section {
+  background-color: rgba(204, 204, 204, 0.4);
+}
+
+.vision-section .vision-part .vision-pilles .nav button {
+  background-color: var(--first-color);
+  font-family: 'Inclusive Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.vision-section .vision-part .vision-pilles .tab-content .tab-pane ul li {
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.vision-section .vision-part .vision-pilles .tab-content .tab-pane ul li span {
+  font-weight: 600;
+}
+
+.vision-section .vision-part .about-page-kalokhe img {
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  margin-bottom: 10px;
+}
+
+.vision-section .vision-part .about-page-kalokhe .board {
+  background-color: var(--first-color);
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.vision-section .vision-part .about-page-kalokhe .board h2 {
+  font-family: 'Inclusive Sans', sans-serif;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.vision-section .vision-part .about-page-kalokhe .board h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  font-size: 22px;
+}
+
+.certificate-section .certificate-area h2 {
+  text-align: center;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 600;
+}
+
+.certificate-section .certificate-area .certificate-img img {
+  margin-bottom: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  border: 1px solid var(--first-color);
+}
+
+.product-page-section .product-page-area .product-side-pages {
+  background-color: var(--first-color);
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.product-page-section .product-page-area .product-side-pages li {
+  line-height: 30px;
+  list-style: none;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--white);
+  cursor: pointer;
+}
+
+.product-page-section .product-page-area .product-side-pages li a {
+  color: var(--white);
+}
+
+.product-page-section .product-page-area .product-page-code iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info img {
+  margin-bottom: 20px;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info h1 {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info h1 span {
+  background-color: var(--first-color);
+  padding: 10px 13px 10px 13px;
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info p {
+  line-height: 30px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info h3 {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info h3 span {
+  background-color: var(--first-color);
+  border-radius: 10px;
+  padding: 10px 13px 10px 13px;
+  color: var(--white);
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info ul li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info .hume-btn .btn {
+  background-color: var(--first-color);
+  cursor: pointer;
+  border: none;
+  padding: 10px 14px 10px 14px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-page-section .product-page-area .rcc-hume-page-info h2 {
+  font-size: 24px;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 600;
+}
+
+.product-page-section .product-page-area .product-enquiry-pages {
+  background: url("../images/breadcrums-page.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 10px 13px 10px 13px;
+  margin-bottom: 20px;
+}
+
+.product-page-section .product-page-area .product-enquiry-pages .product-enq h2 {
+  color: var(--white);
+  font-family: 'Inclusive Sans', sans-serif;
+}
+
+.product-page-section .product-page-area .product-enquiry-pages .product-enq p {
+  color: var(--white);
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-page-section .product-page-area .product-enquiry-pages .product-enq .btn {
+  background-color: var(--second-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hide-hov:hover li a {
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hide-hov li a:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-page-section .project-page-area .card {
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.project-page-section .project-page-area .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-page-section .project-page-area .card img {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.project-page-section .project-page-area .card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.project-page-section .project-page-area .card p span {
+  background-color: var(--first-color);
+  padding: 5px 10px 5px 10px;
+}
+
+.project-page-section .project-page-area .card .project-btn .btn {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--first-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.project-page-area .card:hover span {
+  color: var(--white);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-section .gallery-part .card {
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+.gallery-section .gallery-part .card img {
+  border-radius: 15px;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-part .card:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-us-section .contact-upper .part {
+  text-align: center;
+  background-color: var(--first-color);
+  width: 100%;
+  height: 160px;
+  padding: 10px 13px 10px 13px;
+  border-radius: 10px;
+  border-bottom: 4px solid var(--second-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.contact-us-section .contact-upper .part:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us-section .contact-upper .part h2 {
+  font-size: 20px;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.contact-us-section .contact-upper .part p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+}
+
+.contact-us-section .contact-upper .part a {
+  color: var(--white);
+}
+
+.contact-form-section .contact-form-part .map-section iframe {
+  width: 100%;
+  height: 620px;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry {
+  background: -webkit-gradient(linear, left top, right top, from(#2d91cf), to(#014e9e)) !important;
+  background: linear-gradient(left, #2d91cf, #014e9e) !important;
+  padding: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry label {
+  font-size: 14px;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 500;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry ::-webkit-input-placeholder {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry :-ms-input-placeholder {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry ::-ms-input-placeholder {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry ::placeholder {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-form-section .contact-form-part .contact-enquiry .btn {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.form-control:hover label {
+  color: var(--white) !important;
+}
+
+.thank-you-section {
+  text-align: center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 76, 158, 0.4)), to(rgba(45, 145, 207, 0.5)));
+  background: linear-gradient(right, rgba(0, 76, 158, 0.4), rgba(45, 145, 207, 0.5));
+  height: 100vh;
+}
+
+.thank-you-section .thankyou-logo img {
+  width: 100px;
+}
+
+.thank-you-section .main-glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 50%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.thank-you-section .thankyou-text h1 {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.thank-you-section .thankyou-check .fas {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.thank-you-section .thankyou-info p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.thank-you-section .thankyou-btn .btn-link {
+  font-family: 'Poppins', sans-serif;
+}
+
+.thank-you-section .thankyou-copy p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.whatsapp-chat {
+  height: 55px;
+  width: 55px;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 2px;
+  right: 0;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn img {
+  width: 34px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .topbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(30px, 30px);
+            transform: translate(30px, 30px);
+  }
+  .swipe-info h2 {
+    font-size: 24px;
+  }
+  .swipe-info p {
+    font-size: 18px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .topbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .navbar ul li a {
+    font-size: 14px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(30px, 30px);
+            transform: translate(30px, 30px);
+  }
+  .swipe-info h2 {
+    font-size: 24px;
+  }
+  .swipe-info p {
+    font-size: 18px;
+  }
+  .swipe-info .swipe-btn .btn {
+    font-size: 14px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topbar {
+    display: block;
+  }
+  .topbar .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(30px, 30px);
+            transform: translate(30px, 30px);
+  }
+  .swipe-info h2 {
+    font-size: 20px;
+  }
+  .swipe-info p {
+    font-size: 15px;
+  }
+  .swipe-info .swipe-btn .btn {
+    font-size: 14px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: block;
+    z-index: -1;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h1 {
+    font-size: 16px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topbar {
+    display: block;
+  }
+  .topbar .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(13px, 13px);
+            transform: translate(13px, 13px);
+  }
+  .swipe-info h2 {
+    font-size: 16px;
+  }
+  .swipe-info p {
+    font-size: 13px;
+  }
+  .swipe-info .swipe-btn .btn {
+    font-size: 14px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: block;
+  }
+  .vision-section {
+    background-color: rgba(204, 204, 204, 0.4);
+  }
+  .vision-section .vision-part .vision-pilles .tab-content .tab-pane ul {
+    margin-left: 10px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h1 {
+    font-size: 16px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h3 {
+    font-size: 16px;
+  }
+  .thank-you-section .main-glass {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topbar {
+    display: block;
+  }
+  .topbar .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  .swipe-info h2 {
+    font-size: 16px;
+  }
+  .swipe-info p {
+    font-size: 11px;
+  }
+  .swipe-info .swipe-btn .btn {
+    font-size: 14px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: block;
+  }
+  .vision-section {
+    background-color: rgba(204, 204, 204, 0.4);
+  }
+  .vision-section .vision-part .vision-pilles .tab-content .tab-pane ul {
+    margin-left: 10px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h1 {
+    font-size: 16px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h3 {
+    font-size: 16px;
+  }
+  .thank-you-section .main-glass {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .topbar {
+    display: block;
+  }
+  .topbar .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  .swipe-info h2 {
+    font-size: 16px;
+  }
+  .swipe-info p {
+    font-size: 10px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: block;
+  }
+  .vision-section {
+    background-color: rgba(204, 204, 204, 0.4);
+  }
+  .vision-section .vision-part .vision-pilles .tab-content .tab-pane ul {
+    margin-left: 10px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h1 {
+    font-size: 16px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h3 {
+    font-size: 16px;
+  }
+  .thank-you-section .main-glass {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .topbar {
+    display: block;
+  }
+  .topbar .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  .swipe-info h2 {
+    font-size: 16px;
+  }
+  .swipe-info p {
+    font-size: 10px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: none;
+  }
+  .vision-section {
+    background-color: rgba(204, 204, 204, 0.4);
+  }
+  .vision-section .vision-part .vision-pilles .tab-content .tab-pane ul {
+    margin-left: 10px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h1 {
+    font-size: 14px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h3 {
+    font-size: 14px;
+  }
+  .thank-you-section .main-glass {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .topbar {
+    display: block;
+  }
+  .topbar .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .social .bg-soc .fab {
+    margin: 4px;
+  }
+  .topbar .phone-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topbar .phone-call .btn-link {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .swipe-info {
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  .swipe-info h2 {
+    font-size: 16px;
+  }
+  .swipe-info p {
+    font-size: 12px;
+  }
+  .about-section .about-area .about-info h1 {
+    font-size: 24px;
+  }
+  .about-section .about-area .about-info .side-img img {
+    display: none;
+  }
+  .why-kalokhee-section .why-part .side-2 img {
+    display: none;
+  }
+  .vision-section {
+    background-color: rgba(204, 204, 204, 0.4);
+  }
+  .vision-section .vision-part .vision-pilles .tab-content .tab-pane ul {
+    margin-left: 10px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h1 {
+    font-size: 14px;
+  }
+  .product-page-section .product-page-area .rcc-hume-page-info h3 {
+    font-size: 14px;
+  }
+  .thank-you-section .main-glass {
+    height: auto;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
